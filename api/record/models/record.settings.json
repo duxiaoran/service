@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "records",
+  "info": {
+    "name": "record"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "times": {
+      "type": "integer"
+    },
+    "img": {
+      "type": "string"
+    },
+    "customer": {
+      "via": "records",
+      "model": "customer"
+    }
+  }
+}

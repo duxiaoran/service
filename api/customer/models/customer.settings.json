@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tel": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "times": {
+      "type": "integer",
+      "min": 0
+    },
+    "state": {
+      "type": "boolean"
+    },
+    "openid": {
+      "type": "string"
+    },
+    "session_key": {
+      "type": "string"
+    },
+    "records": {
+      "collection": "record",
+      "via": "customer"
+    }
+  }
+}

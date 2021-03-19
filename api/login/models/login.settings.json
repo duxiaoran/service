@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logins",
+  "info": {
+    "name": "login"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
